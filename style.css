@@ -1,0 +1,101 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("layarbioskop.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #ff0000;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+#login-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.styled-select {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 30px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+select {
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 15px;
+  background-color: #ff0000; /* Hitam */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+button:hover {
+  background-color: #fff; /* Putih saat hover */
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.layar {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.seats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.seat {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.seat.empty {
+  background-color: #5cb85c;
+}
+
+.seat.occupied {
+  background-color: #d9534f;
+}
